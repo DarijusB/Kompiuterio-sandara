@@ -55,11 +55,13 @@
         }
         .video-container {
             position: relative;
-            padding-bottom: 56.25%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
             height: 0;
             overflow: hidden;
+            max-width: 800px;
+            margin: 20px auto;
         }
-        .video-container img {
+        .video-container iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -85,16 +87,24 @@
     <div id="home" class="container content">
         <h2>Sveiki Atvykę į Kompiuterio Struktūros Gidą</h2>
         <p>Tyrinėkite esmines dalis, kurios leidžia kompiuteriams veikti. Šis gidas padės jums suprasti šiuolaikinių kompiuterių vidinę sandarą.</p>
-        <img src="/api/placeholder/800/400" alt="Kompiuterio Vidinės Dalys">
+        
         <div class="video-container">
-            <img src="/api/placeholder/800/450" alt="Kompiuterio Struktūros Vaizdo Įrašas">
+            <iframe 
+                src="https://www.youtube.com/watch?v=FQfcAm0FnWU&ab_channel=MrBrownCS" 
+                title="Kompiuterio Struktūros Vaizdo Įrašas" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
         </div>
+
+        <img src="https://i.ytimg.com/vi/FQfcAm0FnWU/maxresdefault.jpg" alt="Kompiuterio Vidinės Dalys">
     </div>
 
     <div id="motherboard" class="container content">
         <h2>Pagrindinė Plokštė: Kompiuterio Centrinis Mazgas</h2>
-        <img src="/api/placeholder/600/400" alt="Pagrindinė Plokštė">
-        <p>Pagrindinė plokštė yra pagrindinis laidynas, kuris jungia visas kompiuterio dalis. Ji suteikia elektrines jungtis ir komunikacijos kelius tarp įvairių komponentų, tokių kaip procesorius, operatyvioji atmintis ir saugojimo įrenginiai.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Computer-motherboard.jpg" alt="Pagrindinė Plokštė">
+        <p>Pagrindinė plokštė yra pagrindinis laidynas, kuris jungia visas kompiuterio dalis. Ji suteikia elektrines jungtis ir komunikacijos kelius tarp įvairių komponentų, tokių kaip procesorius, operatyvioji atmintis ir atminties įrenginiai.</p>
         <h3>Pagrindinės Savybės:</h3>
         <ul>
             <li>Turi lizdus procesoriui, operatyvinei atminčiai ir plėtimo kortelėms</li>
@@ -105,7 +115,7 @@
 
     <div id="cpu" class="container content">
         <h2>Procesorius: Kompiuterio Smegenys</h2>
-        <img src="/api/placeholder/600/400" alt="Procesorius">
+        <img src="https://suremontuok.lt/files/9013/0770/2481/Procesorius.jpg" alt="Procesorius">
         <p>Procesorius atlieka didžiąją dalį apdorojimo kompiuteryje. Jis vykdo instrukcijas, atlieka skaičiavimus ir tvarko duomenų srautą tarp aparatinės įrangos komponentų.</p>
         <h3>Pagrindinės Funkcijos:</h3>
         <ul>
@@ -117,8 +127,8 @@
 
     <div id="ram" class="container content">
         <h2>Operatyvioji Atmintis: Laikinoji Saugykla</h2>
-        <img src="/api/placeholder/600/400" alt="Operatyvioji Atmintis">
-        <p>Operatyvioji atmintis (RAM) yra kompiuterio atminties tipas, kuris laikinai saugo duomenis greitam procesoriaus pasiekimui. Ji leidžia greitai skaityti ir rašyti informaciją aktyvių kompiuterio užduočių metu.</p>
+        <img src="https://lt2.pigugroup.eu/colours/727/557/71/72755771/ram-atmintis-kingston-kvr52u42bs8-16-2a534_reference.jpg" alt="Operatyvioji Atmintis">
+        <p>Operatyvioji atmintis (RAM) yra kompiuterio atmintis, kuris laikinai saugo duomenis greitam procesoriaus pasiekimui. Ji leidžia greitai skaityti ir rašyti informaciją aktyvių kompiuterio užduočių metu.</p>
         <h3>Pagrindinės Charakteristikos:</h3>
         <ul>
             <li>Teikia greitą trumpalaikę duomenų saugyklą</li>
