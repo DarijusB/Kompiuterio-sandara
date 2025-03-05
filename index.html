@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding Computer Structure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Computer Structure: Internal Components</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#motherboard">Motherboard</a></li>
+            <li><a href="#cpu">CPU</a></li>
+            <li><a href="#ram">RAM</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="container content">
+        <h2>Welcome to Computer Structure Guide</h2>
+        <p>Explore the essential components that make computers work. This guide will help you understand the inner workings of modern computers.</p>
+        <img src="/api/placeholder/800/400" alt="Computer Internal Components">
+        <div class="video-container">
+            <img src="/api/placeholder/800/450" alt="Computer Structure Video">
+        </div>
+    </div>
+
+    <div id="motherboard" class="container content">
+        <h2>Motherboard: The Computer's Central Hub</h2>
+        <img src="/api/placeholder/600/400" alt="Motherboard">
+        <p>The motherboard is the main circuit board that connects all computer components. It provides electrical connections and communication pathways between different parts like the CPU, RAM, and storage devices.</p>
+        <h3>Key Features:</h3>
+        <ul>
+            <li>Contains slots for CPU, RAM, and expansion cards</li>
+            <li>Provides power distribution to all components</li>
+            <li>Includes BIOS/UEFI firmware for system initialization</li>
+        </ul>
+    </div>
+
+    <div id="cpu" class="container content">
+        <h2>CPU (Central Processing Unit): The Brain of the Computer</h2>
+        <img src="/api/placeholder/600/400" alt="CPU">
+        <p>The CPU performs most of the processing inside a computer. It executes instructions, performs calculations, and manages data flow between hardware components.</p>
+        <h3>Main Functions:</h3>
+        <ul>
+            <li>Executes program instructions</li>
+            <li>Performs mathematical and logical operations</li>
+            <li>Coordinates activities of other computer components</li>
+        </ul>
+    </div>
+
+    <div id="ram" class="container content">
+        <h2>RAM (Random Access Memory): Temporary Storage</h2>
+        <img src="/api/placeholder/600/400" alt="RAM">
+        <p>RAM is a type of computer memory that temporarily stores data for quick access by the CPU. It allows fast reading and writing of information during active computing tasks.</p>
+        <h3>Key Characteristics:</h3>
+        <ul>
+            <li>Provides fast, short-term data storage</li>
+            <li>Loses stored data when computer is powered off</li>
+            <li>Directly impacts computer performance and multitasking capabilities</li>
+        </ul>
+    </div>
+</body>
+</html>
